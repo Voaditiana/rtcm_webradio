@@ -1,0 +1,17 @@
+{% extends "rtcm/index.html"%}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'tolotra/css/tolotra.css' %}">
+    <div id="liste-offre">
+        {% for x in tolotra %}
+        <div class="w3-card">
+            <img class="w3-image lo<tr>go-rtcm" src="{% static 'rtcm/img/logo rtcm.jpeg' %}" alt="" srcset="">
+            <div class="price">
+                <span><b>{{x.tolotra}}</b></span>
+                <span>{{x.vidiny}} Ar / {{x.sokajy}}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <script src="{%static 'tolotra/js/tolotra.js'%}"></script>
+{% endblock %}

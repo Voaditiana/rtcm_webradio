@@ -1,0 +1,55 @@
+body {
+    background-color: #fffff0;
+}
+
+main {
+    padding-top: 2.5vh;
+    padding-left: 2.5vw;
+    display: flex;
+    height: 90%;
+}
+
+.w3-card-4 {
+    width: 100%;
+}
+
+/* Carte anaky iray */
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: lightgray;
+}
+
+#liste-offre {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18vh;
+    justify-content: center;
+    width: 90%;
+}
+
+@media (max-width:767px) {
+    #liste-offre {
+        gap:2.5%;
+    }
+
+    #liste-offre .w3-card  {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #liste-offre img {
+        width: 20vw;
+        height: 99%;
+    }
+
+    #liste-offre .price {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        flex: 1;
+    }
+
+}

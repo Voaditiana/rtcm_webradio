@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Télé Catholique Masôva</title>
+    <link rel="stylesheet" href="{% static 'rtcm/css/w3.css' %}">
+    <link rel="stylesheet" href="{% static 'rtcm/css/theme.css' %}">
+    <link rel="stylesheet" href="{% static 'rtcm/css/index.css' %}">
+    <script src="{% static 'rtcm/js/jquery.min.js' %}"></script>
+    <script src="{% static 'rtcm/js/w3.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'rtcm/css/fa-all.min.css'%}">
+    <script src="{% static 'rtcm/js/fa-all.min.js'%}"></script>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                isDark = false;
+            }
+            // (otherwise default light, no class needed)
+        })();
+    </script>
+</head>
+
+<body class="">
+    <header class="">
+        <nav class="">
+            <div><div class="btn-sidenav"><i class="fas fa-bars"></i></div><b>RTCM</b></div>
+            <div class=""><a class="" href="/webradio">Webradio</a></div>
+            <div><a href="/tolotra">Tolotra</a></div>
+            <div><a href="/fifandraisana">fifandraisana</a></div>
+            <div class="switch_mode">
+                <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="mobile-nav hide">
+                <ul>
+                    <li class=""><a href="/webradio">webradio</a></li>
+                    <li class=""><a href="/tolotra">Tolotra</a></li>
+                    <li class=""><a href="/fifandraisana">Fifandraisana</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        {% block content%}
+
+        {% endblock%}
+        <button class="mobile-play w3-circle w3-card"><i class="fas fa-play"></i></button>
+        <video id="stream" src="http://radio8.pro-fhi.net/live/RADIO%20TELE%20CATHOLIQUE%20MASOVA" hidden></video>
+    </main>
+    <script src="{%static 'rtcm/js/index.js' %}"></script>
+    
+</body>
+
+</html>

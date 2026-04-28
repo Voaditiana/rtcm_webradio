@@ -1,0 +1,28 @@
+{%extends "rtcm/index.html"%}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'webradio/css/webradio.css' %}">
+<div class="player">
+    <div>RCM Webradio</div>
+    <div><button class="player_btn"><i class="fas fa-play-circle"></i></button></div>
+    <video id="stream" src="http://radio8.pro-fhi.net/live/RADIO%20TELE%20CATHOLIQUE%20MASOVA" hidden></video>
+</div>
+<div class="program">
+    <span>Programme</span>
+    <div class="pro-next w3-border">
+        <table class="w3-table w3-bordered">
+                {% for pro in program %}
+                <tr>
+                    <td class="" style="width:10%"> {{pro.heure_deb|time:"H:i"}} </td>
+                    <td class="" style="width:2%"> -</td>
+                    <td class="" style="width:10%">{{pro.heure_fin|time:"H:i"}} </td>
+                    <td class="">{{pro.contenue}}</td>
+                </tr>
+                {% endfor %}
+        </table>
+    </div>
+</div>
+<button class="mobile-play w3-circle w3-card"><i class="fas fa-play"></i></button>
+<script src="{% static 'webradio/js/webradio.js'%}"></script>
+{% endblock %}
