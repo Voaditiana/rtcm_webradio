@@ -1,31 +1,33 @@
-{% extends 'rtcm/index.html'%}
-{% load static %}
-{% block content%}
-<link rel="stylesheet" href="{% static 'fifandraisana/css/fifandraisana.css'%}">
+{% extends 'rtcm/index.html'%} {% load static %} {% block content%}
+<link rel="stylesheet" href="{% static 'fifandraisana/css/fifandraisana.css'%}" />
 <div class="carte">
-    <img class="w3-image" src="{% static 'rtcm/img/carte.png'%}" alt="" srcset="" style="width: 53%;">
+    <img class="w3-image" src="{% static 'rtcm/img/carte.png'%}" alt="" srcset="" style="width: 53%" />
     <div>
         <span><i class="fab fa-facebook-square"></i> Radio Masôva Communication</span>
         <span><i class="fas fa-envelope"></i> radiomasova@gmail.com</span>
         <span><i class="fas fa-phone-alt"></i> 032 62 939 39</span>
-        <span><i class="fa fa-map-marker-alt"></i> Enceinte petit séminaire Androranga</span>
-        <img class="w3-image" src="{%static 'rtcm/img/radio_tamatave.jpeg'%}" alt="" srcset="" style="width: 80%; height: 75%;">
+        <span><i class="fa fa-map-marker-alt"></i> Enceinte petit séminaire
+            Androranga</span>
+        <img class="w3-image" src="{%static 'rtcm/img/radio_tamatave.jpeg'%}" alt="" srcset=""
+            style="width: 80%; height: 75%" />
     </div>
 </div>
 <div class="station">
     <div class="w3-card-4">
-        <img class="w3-image" src="{% static 'rtcm/img/logo_mahanoro.jpeg' %}" alt="" srcset="" style="height: 80%; width: 100%;">
-        <span>RCM Mahanoro <br> </span>
+        <img class="w3-image" src="{% static 'rtcm/img/logo_mahanoro.jpeg' %}" alt="" srcset=""
+            style="height: 80%; width: 100%" />
+        <span>RCM Mahanoro <br /> </span>
     </div>
     <div class="w3-card-4">
-        <img class="w3-image" src="{% static 'rtcm/img/logo_brickaville.jpeg' %}" alt="" srcset="" style="height: 80%; width: 100%;">
-        <span>RCM brickaville <br> </span>
+        <img class="w3-image" src="{% static 'rtcm/img/logo_brickaville.jpeg' %}" alt="" srcset=""
+            style="height: 80%; width: 100%" />
+        <span>RCM brickaville <br /> </span>
     </div>
     <div class="w3-card-4">
-        <img class="w3-image" src="{% static 'rtcm/img/logo rtcm.jpeg' %}" alt="" srcset="" style="height: 80%; width: 100%;">
-        <span>RCM Toamasina <br> </span>
+        <img class="w3-image" src="{% static 'rtcm/img/logo rtcm.jpeg' %}" alt="" srcset=""
+            style="height: 80%; width: 100%" />
+        <span>RCM Toamasina <br /> </span>
     </div>
 </div>
-<br><br>
 <script src="{% static 'fifandraisana/js/fifandraisana.js'%}"></script>
 {% endblock %}

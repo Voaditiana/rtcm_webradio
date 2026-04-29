@@ -1,37 +1,7 @@
-# Python
-__pycache__/
-*.py[cod]
-*.so
-.Python
-venv/
-env/
-ENV/
-
 # Database
 *.sqlite3
 db.sqlite3
 
-# Django
-*.log
-*.pot
-*.pyc
-local_settings.py
-migrations/*.py
-!migrations/__init__.py
-
-# Environment variables
-.env
-.env.local
 
 # IDE
 .vscode/
-.idea/
-*.swp
-
-# Windows
-Thumbs.db
-Desktop.ini
-
-# Render deployment
-staticfiles/
-media/

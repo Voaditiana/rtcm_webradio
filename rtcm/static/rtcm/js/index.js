@@ -73,6 +73,14 @@ $('.btn-sidenav').click(function (p) {
     isSideNavHidden = !isSideNavHidden;
 })
 
+$("main").click(function (params) {
+    if(!isSideNavHidden){
+        $(".mobile-nav").removeClass("show")
+        $(".mobile-nav").addClass("hide")
+        isSideNavHidden = !isSideNavHidden;
+    }
+})
+
 //Mampandeha ny bouton player anaty ecran lehibe sy kely
 
 const mobile_player = $(".mobile-play")

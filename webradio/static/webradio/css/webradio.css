@@ -71,39 +71,7 @@ main .program>span:first-child {
 }
 
 main .program .pro-next {
-    height: 80%;
+    height: 95%;
     overflow-y: scroll;
     scrollbar-width: none;
-}
-
-.mobile-play {
-    display: none;
-}
-
-@media (max-width:767px) {
-    main div.player {
-        display: none;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main div.program {
-        width: 100%;
-        height: 92.5%;
-        margin-right: 0%;
-    }
-
-    .mobile-play {
-        display: block;
-        position: absolute;
-        bottom: 6%;
-        right: 12%;
-        padding: 1% 5%;
-        font-size: 10vw;
-        border: none;
-        color: white;
-    }
 }

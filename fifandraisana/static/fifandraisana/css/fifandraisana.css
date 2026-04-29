@@ -1,3 +1,7 @@
+main div {
+    margin-top: 1vh;
+    margin-bottom: 10vh;
+}
 .carte {
     display: flex;
     flex-direction: row;
@@ -58,5 +62,9 @@
     .w3-card-4 span {
         font-size: 3.5vw;
         text-align: center;
+    }
+
+    .mobile-play {
+        display: none;
     }
 }
